@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginFormContext" prefHeight="664.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelmanagementsystem.controller.LoginFormController">
+   <children>
+      <AnchorPane prefHeight="664.0" prefWidth="881.0">
+         <children>
+            <ImageView fitHeight="699.0" fitWidth="948.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/video-hostelPMSsoftware.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="511.0" layoutY="132.0" prefHeight="412.0" prefWidth="361.0" style="-fx-background-color: #006266;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Login Here" textFill="#fff8f8">
+                     <font>
+                        <Font name="Arial Black" size="26.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="6.0" layoutY="52.0" prefHeight="4.0" prefWidth="352.0" style="-fx-background-color: #2980b9;" />
+                  <JFXTextField fx:id="txtUserName" layoutX="14.0" layoutY="124.0" prefHeight="25.0" prefWidth="336.0" promptText="User Name" style="-fx-background-color: #dff9fb;" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="txtPassword" layoutX="14.0" layoutY="203.0" prefHeight="25.0" prefWidth="336.0" promptText="Password" style="-fx-background-color: #dff9fb;" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Bell MT Bold" size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="btnLogin" layoutX="103.0" layoutY="303.0" onAction="#btnLoginOnAction" prefHeight="44.0" prefWidth="155.0" style="-fx-background-color: #16a085;" text="Login" textFill="#0a0ee1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Hyperlink alignment="CENTER" layoutX="89.0" layoutY="253.0" prefHeight="23.0" prefWidth="192.0" style="-fx-background-color: #c0392b;" text="Forgot Password" />
+                  <Label fx:id="lblWrong" layoutX="55.0" layoutY="372.0" prefHeight="17.0" prefWidth="260.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

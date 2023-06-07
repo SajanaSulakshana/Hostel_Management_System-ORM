@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashBoardMainContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="785.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelmanagementsystem.controller.DashBoardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00060b" height="37.0" layoutX="2.0" opacity="0.63" stroke="BLACK" strokeType="INSIDE" width="1400.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#021426" height="785.0" stroke="BLACK" strokeType="INSIDE" width="242.0" />
+      <ImageView fitHeight="128.0" fitWidth="180.0" layoutX="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/hostel-icon-colored-symbol-premium-quality-vector-23790712.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="4.0" layoutY="142.0" opacity="0.38" prefHeight="2.0" prefWidth="233.0" />
+      <JFXButton fx:id="btnHome" alignment="TOP_LEFT" layoutX="22.0" layoutY="196.0" onAction="#btnHomeOnAction" prefHeight="37.0" prefWidth="199.0" text="Home" textFill="#fdf8f8">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnManageStudents" alignment="TOP_LEFT" layoutX="28.0" layoutY="260.0" onAction="#btnManageStudentsOnAction" prefHeight="37.0" prefWidth="199.0" text="Manage Students" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/students.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnManageRooms" alignment="TOP_LEFT" layoutX="28.0" layoutY="335.0" onAction="#btnManageRoomsOnAction" prefHeight="37.0" prefWidth="199.0" text="Manage Rooms" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/living-room.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnReserveRooms" alignment="TOP_LEFT" layoutX="38.0" layoutY="425.0" onAction="#btnReserveRoomsOnAction" prefHeight="37.0" prefWidth="199.0" text="Reserve Rooms" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/reserve.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnDetails" alignment="TOP_LEFT" layoutX="15.0" layoutY="514.0" onAction="#btnDetailsOnAction" prefHeight="37.0" prefWidth="225.0" text="Rooms Reservation Details" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/booking.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnRemaining" alignment="TOP_LEFT" layoutX="9.0" layoutY="589.0" onAction="#btnRemainingOnAction" prefHeight="37.0" prefWidth="225.0" text="Remaining KeyMoney" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pay.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <AnchorPane fx:id="DashBoardContext" layoutX="242.0" layoutY="37.0" prefHeight="750.0" prefWidth="1157.0">
+         <children>
+            <ImageView fitHeight="750.0" fitWidth="1157.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/10-of-the-most-beautiful-places-to-visit-in-Laos.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="309.0" layoutY="29.0" prefHeight="88.0" prefWidth="539.0" text="WELCOME" textFill="WHITE">
+               <font>
+                  <Font name="Californian FB" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="294.0" layoutY="14.0" prefHeight="17.0" prefWidth="113.0" />
+      <Label layoutX="518.0" layoutY="14.0" prefHeight="17.0" prefWidth="113.0" />
+      <JFXButton fx:id="btnLogout" layoutX="1264.0" layoutY="2.0" onAction="#btnLogoutOnAction" prefHeight="32.0" prefWidth="122.0" text="LogOut" textFill="#0a0000">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/log-out.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

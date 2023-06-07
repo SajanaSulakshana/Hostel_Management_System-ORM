@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1124.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hostelmanagementsystem.controller.ManageStudentsFormController">
+   <children>
+      <ImageView fitHeight="750.0" fitWidth="1164.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/background%20(2).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/students.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="49.0" layoutY="15.0" text="Manage Students Form">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4b657d56" height="599.0" layoutX="722.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="350.0" />
+      <Label alignment="CENTER" layoutX="742.0" layoutY="32.0" prefHeight="17.0" prefWidth="311.0" text="Update Or Delete Student">
+         <font>
+            <Font name="Book Antiqua Bold" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="742.0" layoutY="74.0" opacity="0.63" prefHeight="0.0" prefWidth="311.0" />
+      <JFXTextField fx:id="txtStudentId" layoutX="742.0" layoutY="109.0" prefHeight="25.0" prefWidth="301.0" promptText="Student Id" />
+      <JFXTextField fx:id="txtName" layoutX="742.0" layoutY="178.0" prefHeight="25.0" prefWidth="301.0" promptText="Name" />
+      <JFXTextField fx:id="txtAddress" layoutX="735.0" layoutY="246.0" prefHeight="25.0" prefWidth="301.0" promptText="Address" />
+      <JFXTextField fx:id="txtCity" layoutX="735.0" layoutY="328.0" prefHeight="25.0" prefWidth="301.0" promptText="City" />
+      <JFXTextField fx:id="txtContactNo" layoutX="735.0" layoutY="397.0" prefHeight="25.0" prefWidth="301.0" promptText="Contact No" />
+      <JFXTextField fx:id="txtGmail" layoutX="735.0" layoutY="464.0" prefHeight="25.0" prefWidth="301.0" promptText="Gmail" />
+      <JFXButton fx:id="btnUpdate" layoutX="921.0" layoutY="514.0" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #3498db;" text="Update" textFill="#100101">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="735.0" layoutY="565.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="#140101">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblStudent" layoutX="24.0" layoutY="409.0" onMouseClicked="#tblStudentRefreshOnAction" prefHeight="235.0" prefWidth="639.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="61.0" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="77.0" text="Name " />
+            <TableColumn fx:id="colAddress" prefWidth="117.0" text="Address" />
+            <TableColumn fx:id="colCity" prefWidth="93.0" text="City" />
+            <TableColumn fx:id="colContactNo" prefWidth="113.0" text="Contact No" />
+            <TableColumn fx:id="colGmail" prefWidth="176.0" text="Gmail" />
+        </columns>
+      </TableView>
+      <AnchorPane fx:id="addStudentPane" layoutX="24.0" layoutY="65.0" prefHeight="275.0" prefWidth="574.0" />
+      <JFXButton fx:id="btnSearch" layoutX="735.0" layoutY="514.0" onAction="#btnSearchOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: #27ae60;" text="Search" textFill="#100101">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="921.0" layoutY="565.0" onAction="#btnClearOnAction" prefHeight="25.0" prefWidth="132.0" style="-fx-background-color: yellow;" text="Clear" textFill="#140101">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
